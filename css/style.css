@@ -105,7 +105,47 @@ tr:nth-child(odd) > td {
     box-shadow: chartreuse;
 }
 
+.player {
+    color: white;
+    position: absolute; 
+    bottom: 1%; 
+    left: 0px;
+}
 
+/***************************************************/
+/*         Media queries, arranco por mobile         */
+/****************************************************/
+@media only screen and (max-width: 660px) {
+    
+    #listcontainer {
+        display: flex;
+        flex-direction: col;
+    }
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: auto;
+        align-content: start
+    }
+    
+    .item {
+        flex: 0 0 auto;
+        margin: 10px;
+    }
+
+    footer {
+        display: none;
+    }
+
+  }
 /***************************************************/
 /*   Estilo del componente boton - fondo blanco   */
 /***************************************************/
