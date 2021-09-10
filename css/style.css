@@ -10,6 +10,10 @@ bgcolor="lightblue"
     font-size: x-large;
     /*font-size: 2rem;*/
     /*font-family: fantasy; /* En mi caso tengo esta font y la uso*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
 }
 
 /* Toda la pagina siempre debe tener fondo negro */
@@ -124,6 +128,7 @@ tr:nth-child(odd) > td {
     grid-area: menu; 
     border-color: black;
     border-style: dotted;
+    
 }
 .item3 { 
     grid-area: main; 
@@ -139,20 +144,20 @@ tr:nth-child(odd) > td {
 }
 
 .grid-container {
-    width: 100%;
     display: grid;
     /* Intentamos duplicar el area de la derecha en comparacion con la del menu*/
     grid-template-areas:
       'menu header header '
       'menu main main '
       'footer footer footer ';
-    /*grid-gap: 10px;*/
-    border-color: black;
-    border-style: dotted;
-     background-color: #2196F3;
-    padding: 0px;
+    border-color: red;
+    border-style: solid;
+    background-color: #2196F3;
+    grid-gap: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
-  
 
 
 /***************************************************/
@@ -191,4 +196,8 @@ tr:nth-child(odd) > td {
   }
 /***************************************************/
 /*   Estilo del componente boton - fondo blanco   */
+/***************************************************/
+
+/***************************************************/
+/*   Estilo del Registrar                          */
 /***************************************************/
