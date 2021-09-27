@@ -13,10 +13,11 @@ const PI = 3.141528;
 
 console.log(ESTO_ES_UNA_CONSTANTE + PI); // Usar log en la consola
 console.log(PI)
+console.log(Math.PI)
 console.dir(document.body); // usar dir en la consola...
 
 // Defini mi variable myInput y llame a una funcion prompt y le pase datos 
-let myInput = prompt("Ingrese su edad..."); // Esto captura string
+let myInput = 18//prompt("Ingrese su edad..."); // Esto captura string
 
 console.log(myInput);
 
@@ -32,17 +33,4 @@ calcularEdadMinima(myInput);
 calcularEdadMinima(myInput);
 if ( calcularEdadMinima(myInput)) {
     console.log("Lo dejo ingresar a la pagina...")
-}
-
-
-function calcularEdadMinima(parametro) {
-    
-    if (parametro >= 18 ) {
-        console.log("Cumple con la edad minima...")
-    } else {
-        console.log("No cumple con la edad minima...");
-        return false;
-    }
-
-    return true;
 }
