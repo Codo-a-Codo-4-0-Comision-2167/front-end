@@ -1,3 +1,5 @@
+'use strict'
+
 // Espero recibir un string de la funcion 
 // a la cual le paso un numero como parametro
 var mes = nombreDeMes(1);
@@ -43,3 +45,24 @@ var serieFib = fibonacci(3);
 if (serieFib != 2) {
     alert("Error en Fibonacci de 3")
 }
+
+
+//myFuncionFib(1);// No tengo idea que hay adentro... 
+
+//myWorker(myFuncionFib);
+
+//((numero) => numero * 2) () // Esto tiene un porque...
+
+var myFirstString = "ESto es una cadea de texto" // <= esto es un string...
+var mySecondString = String("ESto es una cadea de texto" );
+var myThirdString = new String("ESto es una cadea de texto" );// Este solo es un objeto
+
+console.log( typeof myFirstString, typeof mySecondString, typeof myThirdString);
+
+String.prototype.myNewFunction = (numero) => numero * 2
+
+console.log(myFirstString.length)
+console.log(mySecondString.length)
+console.log(myThirdString.length)
+
+console.log(myThirdString.myNewFunction(2))
